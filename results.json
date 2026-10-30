@@ -1,0 +1,468 @@
+{
+  "seed": 20261004,
+  "gains": {
+    "KP_L": 2.0,
+    "KI_L": 0.01,
+    "KP_T": 0.25,
+    "KI_T": 0.005
+  },
+  "windows": {
+    "Credential misuse": {
+      "loss_1min": 58,
+      "trip": 164,
+      "overflow": null,
+      "loss_600s_min": 17.316666666666666
+    },
+    "Unsafe engineering": {
+      "loss_1min": 128,
+      "trip": 128,
+      "overflow": 223,
+      "loss_600s_min": 15.0
+    },
+    "Ransomware": {
+      "loss_1min": 247,
+      "trip": 247,
+      "overflow": null,
+      "loss_600s_min": 15.0
+    },
+    "Vendor firmware": {
+      "loss_1min": 191,
+      "trip": null,
+      "overflow": null,
+      "loss_600s_min": 8.116666666666667
+    }
+  },
+  "delay_table": {
+    "Credential misuse": {
+      "0": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 1.5
+      },
+      "60": {
+        "loss_s": 64,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 71.39043425865638,
+        "peak_L": 1.5
+      },
+      "120": {
+        "loss_s": 158,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 80.03726636229669,
+        "peak_L": 1.5
+      },
+      "300": {
+        "loss_s": 1039,
+        "trip": true,
+        "trip_t": 464,
+        "overflow": false,
+        "peak_T": 85.02379554187287,
+        "peak_L": 1.5
+      },
+      "600": {
+        "loss_s": 1039,
+        "trip": true,
+        "trip_t": 464,
+        "overflow": false,
+        "peak_T": 85.02379554187287,
+        "peak_L": 1.5
+      }
+    },
+    "Unsafe engineering": {
+      "0": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 1.5
+      },
+      "60": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 61.61285189090633,
+        "peak_L": 2.0032329224199525
+      },
+      "120": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 61.53045364958309,
+        "peak_L": 2.4554919390100216
+      },
+      "300": {
+        "loss_s": 900,
+        "trip": true,
+        "trip_t": 601,
+        "overflow": true,
+        "peak_T": 60.002524218724545,
+        "peak_L": 3.0
+      },
+      "600": {
+        "loss_s": 900,
+        "trip": true,
+        "trip_t": 901,
+        "overflow": true,
+        "peak_T": 60.0,
+        "peak_L": 3.0
+      }
+    },
+    "Ransomware": {
+      "0": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 1.5
+      },
+      "60": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 1.5
+      },
+      "120": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 1.5
+      },
+      "300": {
+        "loss_s": 900,
+        "trip": true,
+        "trip_t": 547,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 2.5054082386798076
+      },
+      "600": {
+        "loss_s": 900,
+        "trip": true,
+        "trip_t": 547,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 2.5054082386798076
+      }
+    },
+    "Vendor firmware": {
+      "0": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 1.5
+      },
+      "60": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.00050446939666,
+        "peak_L": 1.5
+      },
+      "120": {
+        "loss_s": 0,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.00549404496062,
+        "peak_L": 1.5
+      },
+      "300": {
+        "loss_s": 178,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.00192624228658,
+        "peak_L": 1.5
+      },
+      "600": {
+        "loss_s": 487,
+        "trip": false,
+        "trip_t": -1,
+        "overflow": false,
+        "peak_T": 60.0,
+        "peak_L": 1.5
+      }
+    }
+  },
+  "policy": {
+    "implicit": {
+      "malicious_executed": 1.0,
+      "benign_blocked": 0.0,
+      "benign_stepup": 0.0,
+      "n_mal_executed": 200,
+      "loss_min_120": 131.66666666666666,
+      "trips_120": 0,
+      "overflows_120": 0,
+      "loss_min_300": 1924.15,
+      "trips_300": 112,
+      "overflows_300": 8
+    },
+    "perimeter": {
+      "malicious_executed": 0.71,
+      "benign_blocked": 0.05,
+      "benign_stepup": 0.0,
+      "n_mal_executed": 142,
+      "loss_min_120": 100.06666666666666,
+      "trips_120": 0,
+      "overflows_120": 0,
+      "loss_min_300": 1368.05,
+      "trips_300": 79,
+      "overflows_300": 6
+    },
+    "zero_trust": {
+      "malicious_executed": 0.165,
+      "benign_blocked": 0.09,
+      "benign_stepup": 0.68,
+      "n_mal_executed": 33,
+      "loss_min_120": 23.7,
+      "trips_120": 0,
+      "overflows_120": 0,
+      "loss_min_300": 264.75,
+      "trips_300": 14,
+      "overflows_300": 1,
+      "mal_via_stepup": 30,
+      "mal_via_stepup_vendor": 11,
+      "mal_executed_by_family": {
+        "Credential misuse": 9,
+        "Unsafe engineering": 9,
+        "Ransomware": 2,
+        "Vendor firmware": 13
+      },
+      "overflow_requests_300": [
+        {
+          "family": "Unsafe engineering",
+          "declared_process": 0.0,
+          "decision": "step-up"
+        }
+      ]
+    }
+  },
+  "weight_sensitivity": {
+    "n_vectors": 729,
+    "unchanged_mean": 0.9044855967078189,
+    "unchanged_min": 0.775,
+    "mal_exec_min": 0.115,
+    "mal_exec_max": 0.275,
+    "ben_block_min": 0.06,
+    "ben_block_max": 0.18
+  },
+  "policy_robustness": {
+    "0.0": {
+      "zt_mal": {
+        "mean": 0.14520000000000002,
+        "min": 0.09,
+        "max": 0.205
+      },
+      "perim_mal": {
+        "mean": 0.7025000000000001,
+        "min": 0.625,
+        "max": 0.795
+      },
+      "zt_ben_block": {
+        "mean": 0.103,
+        "min": 0.06,
+        "max": 0.15
+      },
+      "perim_ben_block": {
+        "mean": 0.0499,
+        "min": 0.015,
+        "max": 0.085
+      },
+      "zt_loss_reduction": {
+        "mean": 0.8776511609286404,
+        "min": 0.8174366361422643,
+        "max": 0.9360051405316643
+      },
+      "zt_below_perimeter_all": true,
+      "zt_loss_below_perimeter_all": true
+    },
+    "0.25": {
+      "zt_mal": {
+        "mean": 0.1929,
+        "min": 0.145,
+        "max": 0.265
+      },
+      "perim_mal": {
+        "mean": 0.7025000000000001,
+        "min": 0.625,
+        "max": 0.795
+      },
+      "zt_ben_block": {
+        "mean": 0.103,
+        "min": 0.06,
+        "max": 0.15
+      },
+      "perim_ben_block": {
+        "mean": 0.0499,
+        "min": 0.015,
+        "max": 0.085
+      },
+      "zt_loss_reduction": {
+        "mean": 0.8377403758819675,
+        "min": 0.7754341253383565,
+        "max": 0.900580405368292
+      },
+      "zt_below_perimeter_all": true,
+      "zt_loss_below_perimeter_all": true
+    },
+    "0.5": {
+      "zt_mal": {
+        "mean": 0.25720000000000004,
+        "min": 0.205,
+        "max": 0.32
+      },
+      "perim_mal": {
+        "mean": 0.7025000000000001,
+        "min": 0.625,
+        "max": 0.795
+      },
+      "zt_ben_block": {
+        "mean": 0.103,
+        "min": 0.06,
+        "max": 0.15
+      },
+      "perim_ben_block": {
+        "mean": 0.0499,
+        "min": 0.015,
+        "max": 0.085
+      },
+      "zt_loss_reduction": {
+        "mean": 0.7793808207363593,
+        "min": 0.6892343247906543,
+        "max": 0.838774684154775
+      },
+      "zt_below_perimeter_all": true,
+      "zt_loss_below_perimeter_all": true
+    }
+  },
+  "plant_physics": {
+    "Credential misuse": {
+      "loss_1min": [
+        38,
+        107,
+        0
+      ],
+      "trip": [
+        88,
+        227,
+        4
+      ],
+      "overflow": [
+        null,
+        null,
+        16
+      ]
+    },
+    "Unsafe engineering": {
+      "loss_1min": [
+        75,
+        296,
+        0
+      ],
+      "trip": [
+        82,
+        296,
+        0
+      ],
+      "overflow": [
+        143,
+        565,
+        0
+      ]
+    },
+    "Ransomware": {
+      "loss_1min": [
+        195,
+        412,
+        0
+      ],
+      "trip": [
+        201,
+        412,
+        0
+      ],
+      "overflow": [
+        null,
+        null,
+        16
+      ]
+    },
+    "Vendor firmware": {
+      "loss_1min": [
+        157,
+        232,
+        0
+      ],
+      "trip": [
+        null,
+        null,
+        16
+      ],
+      "overflow": [
+        null,
+        null,
+        16
+      ]
+    },
+    "earliest_trip_counts": {
+      "Credential misuse": 4,
+      "Unsafe engineering": 12,
+      "Ransomware": 0,
+      "Vendor firmware": 0
+    },
+    "shortest_loss_counts": {
+      "Credential misuse": 14,
+      "Unsafe engineering": 2,
+      "Ransomware": 0,
+      "Vendor firmware": 0
+    },
+    "vendor_trip_corners": 0
+  },
+  "scalar_batch_matches_of_256": 256,
+  "sha256": "614ac8ce0807fcefbb57cd55b079df492eea7bd63365cc98640e39294cedbf19",
+  "timing": {
+    "scalar_step_us": 0.864304770833435,
+    "scalar_episode_ms": 2.074331450000244,
+    "score_us": 0.9033479249999488,
+    "batch_n": 4096,
+    "batch_s": 1.0568266979999947,
+    "batch_episodes_per_s": 3875.7537141629064,
+    "batch_step_us": 0.1075059710693354
+  },
+  "multicore": {
+    "1": {
+      "seconds": 0.964794089999998,
+      "episodes_per_s": 4245.465475436326,
+      "matches_single": true,
+      "speedup": 1.0
+    },
+    "2": {
+      "seconds": 0.6507934999999918,
+      "episodes_per_s": 6293.855116868947,
+      "matches_single": true,
+      "speedup": 1.482488823259621
+    }
+  },
+  "memory": {
+    "peak_rss_mb": 35.296875,
+    "state_floats_per_episode": 6
+  }
+}

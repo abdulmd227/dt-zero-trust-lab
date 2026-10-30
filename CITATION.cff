@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "dt-zero-trust-lab: simulation code for Digital-Twin-Driven Experiential Learning for Cyber-Physical Security"
+authors:
+  - family-names: "Mahamed"
+    given-names: "Abdul Khadir"
+    affiliation: "New York University"
+  - family-names: "Subramani"
+    given-names: "Ramesh"
+    affiliation: "New York University"
+  - family-names: "Mandapaka"
+    given-names: "Sai Pavan Kumar"
+    affiliation: "New York University"
+license: MIT
+repository-code: "https://github.com/abdulmd227/dt-zero-trust-lab"
+preferred-citation:
+  type: conference-paper
+  title: "Digital-Twin-Driven Experiential Learning for Cyber-Physical Security: Teaching Zero Trust Through Real-Time Industrial Process Consequences"
+  authors:
+    - family-names: "Mahamed"
+      given-names: "Abdul Khadir"
+    - family-names: "Subramani"
+      given-names: "Ramesh"
+    - family-names: "Mandapaka"
+      given-names: "Sai Pavan Kumar"
+  collection-title: "Proc. 19th IEEE International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC 2026)"
+  year: 2026
